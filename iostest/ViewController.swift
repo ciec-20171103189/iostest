@@ -17,7 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var clmZ: UITextField!
     
     @IBAction func caculator(_ sender: Any) {
-        clmZ.text = "\(Int(clmX.text!)! + Int(clmY.text!)!)"
+      //  clmZ.text = "\(Int(clmX.text!)! +
+        //Int(clmY.text!)!)"
+        var x=0
+        x=Int(clmX.text!)!
+        var y=0
+        y=Int(clmY.text!)!
+        var z:Int=0
+        z = x + y
+        clmZ.text = "\(z)"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
